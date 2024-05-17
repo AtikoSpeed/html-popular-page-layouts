@@ -1,0 +1,100 @@
+* {
+  background-color: lightgoldenrodyellow;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: #f7f7f7;
+  padding: 0% 15%;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+img {
+  max-height: 45px;
+}
+
+.search-box {
+  grid-column: 1 / span 1;
+  display: flex;
+  background-color: #f7f7f7;
+  align-items: center;
+  justify-content: left;
+}
+
+.nav-buttons {
+  grid-column: 2 / span 1;
+  display: flex;
+  background-color: darkorchid;
+  border-radius: 5px;
+  padding: 5px;
+  justify-content: right;
+  align-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 15px;
+  padding: 0% 15%;
+  min-height: 85%;
+}
+
+.left-bar,
+.middle-box,
+.right-bar {
+  display: inline;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+  height: 100%;
+}
+
+.left-bar {
+  grid-column: 1 / span 1;
+  background-color: red;
+}
+
+.middle-box {
+  grid-column: 2 / span 1;
+  background-color: green;
+}
+
+.right-bar {
+  grid-column: 3 / span 1;
+  background-color: blue;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  justify-content: left;
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: auto;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.small-card {
+  min-height: fit-content;
+}
+
+.big-card {
+  min-height: 30%;
+}
+
+.right-bar .card {
+  min-height: 100px;
+}
+
+.left-bar .card h4 {
+  display: block;
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  width: 100%;
+}
