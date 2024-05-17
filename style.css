@@ -2,19 +2,38 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  background-color: lightgoldenrodyellow;
+}
+
+body {
+  height: 100vh;
 }
 
 nav {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background-color: burlywood;
+  background-color: #f7f7f7;
   padding: 0% 15%;
   margin-bottom: 15px;
+  height: 50px;
+}
+
+img {
+  max-height: 45px;
 }
 
 .search-box {
   grid-column: 1 / span 1;
-  background-color: chartreuse;
+  display: flex;
+  background-color: #f7f7f7;
+  align-items: center;
+  justify-content: left;
+}
+
+input {
+  height: 70%;
+  border-radius: 5px;
+  margin-left: 5px;
 }
 
 .nav-buttons {
@@ -27,29 +46,63 @@ main {
   grid-template-columns: 1fr 2fr 1fr;
   gap: 15px;
   padding: 0% 15%;
-  min-height: 500px;
+  min-height: 85%;
+}
+
+.left-bar,
+.middle-box,
+.right-bar {
+  display: inline;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+  height: 100%;
 }
 
 .left-bar {
   grid-column: 1 / span 1;
-  display: flex;
-  justify-content: center;
   background-color: red;
-  border-radius: 15px;
 }
 
 .middle-box {
   grid-column: 2 / span 1;
-  display: flex;
-  justify-content: center;
   background-color: green;
-  border-radius: 15px;
 }
 
 .right-bar {
   grid-column: 3 / span 1;
-  display: flex;
-  justify-content: center;
   background-color: blue;
-  border-radius: 15px;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  justify-content: left;
+  width: 100%;
+  min-height: 50px;
+  margin-bottom: auto;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.small-card {
+  min-height: fit-content;
+}
+
+.big-card {
+  min-height: 30%;
+}
+
+.right-bar .card {
+  min-height: 100px;
+}
+
+.left-bar .card h4 {
+  display: block;
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+  width: 100%;
 }
