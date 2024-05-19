@@ -28,15 +28,67 @@ main {
 }
 
 .left-bar {
-  background-color: red;
+  background-color: lightgray;
+  display: inline;
 }
 main {
   background-color: chartreuse;
 }
 .right-bar {
+  display: block;
   background-color: aqua;
 }
 
 .super-right {
   background-color: darkorchid;
+  color: white;
+}
+
+button {
+  height: 50px;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 5px;
+  width: 100%;
+}
+
+main ul {
+  margin-left: 0;
+}
+
+li {
+  margin: 10px;
+  margin-left: 0;
+}
+
+.outlined {
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  margin-left: 1px;
+  margin-top: 10px;
+  padding-left: 2px;
+}
+
+.mail-item {
+  display: flex;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 0;
+  height: 27px;
+  width: 100%;
+  align-items: center;
+}
+
+input[type="radio"] {
+  width: 20px;
+}
+
+p {
+  margin-top: 10px;
 }
