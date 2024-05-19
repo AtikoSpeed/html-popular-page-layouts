@@ -1,0 +1,65 @@
+body {
+  display: grid;
+  grid-template-columns: 50px 200px max-content;
+  grid-template-rows: 50px 1fr 50px;
+}
+
+nav {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span max-content;
+  background-color: darkorchid;
+}
+
+aside {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span max-content;
+  background-color: chartreuse;
+  display: grid;
+  grid-template-rows: 50px 3fr repeat(4, 2fr) 50px;
+}
+
+.two {
+  grid-row: 2;
+  background-color: antiquewhite;
+}
+
+.three {
+  grid-row: 3;
+  background-color: red;
+}
+
+.four {
+  grid-row: 4;
+  background-color: blue;
+}
+
+.five {
+  grid-row: 5;
+  background-color: aqua;
+}
+
+.six {
+  background-color: beige;
+}
+
+.seven {
+  background-color: maroon;
+}
+
+header {
+  grid-column: 3 / span max-content;
+  grid-row: 1 / span 1;
+  background-color: brown;
+}
+
+main {
+  grid-column: 3 / span max-content;
+  grid-row: 2 / span 1;
+  background-color: green;
+}
+
+footer {
+  grid-column: 3 / span max-content;
+  grid-row: 3 / span 1;
+  background-color: purple;
+}
